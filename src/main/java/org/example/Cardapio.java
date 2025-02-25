@@ -17,7 +17,7 @@ public class Cardapio {
     // Adiciona itens no cardápio
     public void adicionarPizza(Pizza pizza) {
         pizzas.add(pizza);
-        System.out.println("Pizza adicionada ao cardápio: " + pizza.getNome());
+        System.out.println("Pizza adicionada ao cardápio: " + pizza.getSabor());
     }
 
     public void adicionarBebida(Bebida bebida) {
@@ -37,7 +37,7 @@ public class Cardapio {
         } else {
             System.out.println("Pizzas disponíveis:");
             for (Pizza p : pizzas) {
-                System.out.println("- " + p.getNome() + " | Preço: R$" + p.getPreco());
+                System.out.println("- " + p.getSabor() + " | Preço: R$" + p.getPreco());
             }
         }
     }
