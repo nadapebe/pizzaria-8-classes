@@ -5,7 +5,6 @@ public Entregador(String nome, String telefone, String veiculo) {
     private telefone = telefone;
     private veiculo = veiculo;
 }
-
 public void atribuirEntrega(Entrega entrega) {
     System.out.println("Entrega atribuída a " + nome);
 }
