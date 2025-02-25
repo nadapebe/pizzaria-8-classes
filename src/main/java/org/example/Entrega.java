@@ -4,13 +4,13 @@ class Entrega {
     private Pedido pedido;
     private String status;
     private Entregador entregador;
-    }
 
     public void atualizarStatus(String novoStatus) {
         this.status = novoStatus;
     }
 
     public int tempoEstimado() {
+
         return 30;
     }
 
@@ -31,3 +31,5 @@ class Entrega {
         return entregador;
     }
 }
+
+
