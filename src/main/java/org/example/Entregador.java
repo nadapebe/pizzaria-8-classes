@@ -1,28 +1,34 @@
 package org.example;
 
-public Entregador(String nome, String telefone, String veiculo) {
-    private nome = nome;
-    private telefone = telefone;
-    private veiculo = veiculo;
-}
-public void atribuirEntrega(Entrega entrega) {
-    System.out.println("Entrega atribuída a " + nome);
-}
+class Entregador {
+    private String nome;
+    private String telefone;
+    private String veiculo;
 
-public void atualizarLocalizacao() {
-    System.out.println("Localização do entregador " + nome + " atualizada.");
-}
+    public Entregador(String nome, String telefone, String veiculo) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.veiculo = veiculo;
+    }
 
-// Getters e Setters
-public String getNome() {
-    return nome;
-}
+    public void atribuirEntrega(Entrega entrega) {
+        System.out.println("Entrega atribuída a " + nome);
+    }
 
-public String getTelefone() {
-    return telefone;
-}
+    public void atualizarLocalizacao() {
+        System.out.println("Localização do entregador " + nome + " atualizada.");
+    }
 
-public String getVeiculo() {
-    return veiculo;
-}
+    // Getters e Setters
+    public String getNome() {
+        return nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getVeiculo() {
+        return veiculo;
+    }
 }

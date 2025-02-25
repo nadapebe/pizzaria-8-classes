@@ -4,7 +4,7 @@ class Entrega {
     private Pedido pedido;
     private String status;
     private Entregador entregador;
-    }
+
 
     public void atualizarStatus(String novoStatus) {
         this.status = novoStatus;
@@ -31,3 +31,5 @@ class Entrega {
         return entregador;
     }
 }
+
+
