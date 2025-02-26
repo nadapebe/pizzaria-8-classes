@@ -6,18 +6,14 @@ public class Main {
 
         Cardapio cardapio = new Cardapio();
 
-        // Adiciona pizzas no cardápio
         cardapio.adicionarPizza(new Pizza("Calabresa", 35.00));
         cardapio.adicionarPizza(new Pizza("Marguerita", 38.00));
 
-        // Adiciona bebidas no cardápio
         cardapio.adicionarBebida(new Bebida("Coca-Cola 1L", 8.00));
         cardapio.adicionarBebida(new Bebida("Suco Natural", 10.00));
 
-        // Adiciona acompanhamentos
         cardapio.adicionarAcompanhamento(new Acompanhamento("Batata Frita", 15.00));
 
-        // Lista itens do cardápio
         cardapio.listarPizzas();
         cardapio.listarBebidas();
         cardapio.listarAcompanhamentos();
@@ -31,6 +27,8 @@ public class Main {
         Cliente cliente2 = new Cliente("Maria", "88888-8888", "Rua B, 456");
         Pedido pedido2 = new Pedido(2, cliente2);
 
+        cliente2.listarPedidos();
+
         cozinha.adicionarPedido(pedido1);
         cozinha.adicionarPedido(pedido2);
 
@@ -40,5 +38,22 @@ public class Main {
 
         cozinha.exibirPedidosFinalizados();
 
+
+//---------------------------------------------------------------------------------------------------------------------
+        Entregador entregador1 = new Entregador("Joao Augusto", "9999-9999", "RPY9G19");
+
+        Entrega entrega1 = new Entrega();
+
+        entregador1.atribuirEntrega(entrega1);
+        entregador1.atualizarLocalizacao();
+
+        entrega1.atualizarStatus("entregue");
+        entrega1.tempoEstimado();
+        entrega1.entregarPedido();
+
     }
 }
+
+
+
+
